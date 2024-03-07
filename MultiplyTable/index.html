@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <center><h1>Multiplication Table</h1></center>
+    <button type="button" id="multiplication" onclick="table()" style="border: 2px solid black;">Show table</button>
+    <br/>
+    <p id="tables myDIV"></p>
+
+<script>
+  // need more study :)
+  let i=1
+function table() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+function table()
+{
+var button = document.getElementById('multiplication');
+
+var showTables = '';
+for (var i=1; i<12; i++) {
+showTables 
+x=i*6;
+    document.write(`<table> <tr> <td><span>${6} X ${i} = ${x} </span> <br /> </td> </tr></table>`);
+}
+var p_tables = document.getElementById('tables').innerHTML = showTables;
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
